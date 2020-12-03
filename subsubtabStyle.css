@@ -1,0 +1,39 @@
+/* Style the subsubtab */
+.subsubtab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #3f3f3f;
+}
+
+/* Style the buttons inside the subsubtab */
+.subsubtab button {
+  background-color: inherit;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.subsubtab button:hover {
+  background-color: rgb(255, 209, 102);
+  color: black;
+}
+
+/* Create an active/current subsubtablink class */
+.subsubtab button.active {
+  background-color: #FEBD27;
+  color: black;
+}
+
+/* Style the subsubtab content */
+.subsubtabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="tabStyle.css" />
+    <script src="loadTabs.js"></script>
+    <link rel="stylesheet" href="subtabStyle.css" />
+    <link rel="stylesheet" href="subsubtabStyle.css" />
+
+    <script src="math/algebra/percentage.js"></script>
+    <script src="math/unit/standard_unit.js"></script>
+    <script src="math/misc/standard_unit.js"></script>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td><h1>🏆All-In-One-Calculator</h1></td>
+        <td><h5>[made by Max R. v1.2]</h5></td>
+      </tr>
+    </table>
+    
+    <h2>All Calculators</h2>
+
+    <!-- ############## ############## ############## -->
+    <!-- MAIN CATEGORY TABS -->
+    <!-- ############## ############## ##############-->
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCategory(event, 'Algebra')"> ❌Algebra </button> 
+      <button class="tablinks" onclick="openCategory(event, 'Geometry')"> ❌Geometry </button> 
+      <button class="tablinks" onclick="openCategory(event, 'UnitConverters')"> ❌UnitConverters </button> 
+      <button class="tablinks" onclick="openCategory(event, 'Finance')"> ❌Finance </button>
+      <button class="tablinks" onclick="openCategory(event, 'Health')"> ❌Health </button> 
+      <button class="tablinks" onclick="openCategory(event, 'Misc')"> 🏆Misc </button>
+    </div>
+
+    <!-- ############## ############## ############## -->
+    <!-- SUB CATEGORY TABS -->
+    <!-- ############## ############## ############## -->
+
+    <div id="Algebra" class="tabcontent">
+      <div class="subtab">
+        <button class="subtablinks" onclick="openSubCategory(event, 'Percentage')" > ➗Percentage </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'AverageMean')" > ❌AverageMean </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'ProportionRatio')" > ❌ProportionRatio </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'Combinations')" > ❌Combinations </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'DecimalToFraction')" > ❌DecimalToFraction </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'FractionSimplifier')" > ❌FractionSimplifier </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'PrimeChecker')" > ❌PrimeChecker </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'GCFLCM')"> ❌GCFLCM </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'Numbergenerator')" > ❌Numbergenerator </button> 
+      </div>
+    </div>
+    <div id="Geometry" class="tabcontent">
+      <h3>Geometry</h3>
+      <p>Geometry Elements</p>
+    </div>
+    <div id="UnitConverters" class="tabcontent">
+      <div class="subtab">
+        <button class="subtablinks" onclick="openSubCategory(event, 'Acceleration')"> 🚘Acceleration </button>
+        <button class="subtablinks" onclick="openSubCategory(event, 'Angle')" > ❌Angle </button>
+        <button class="subtablinks" onclick="openSubCategory(event, 'Area')" > ⛳Area </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'Cooking')" > ❌Cooking </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'DataTransferSpeed')" > ⏬DataTransferSpeed </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'DigitalStorage')" > 💾DigitalStorage </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'Energy')" > 🔋Energy </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'Force')"> 🥊Force </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'Length')" > 🌐Length </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'Fuel')" > ❌Fuel </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'Power')" > 🚛Power </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'Pressure')" > 👨‍🔧Pressure </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'RomanNumerals')" > ❌RomanNumerals </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'ShoeSize')" > ❌ShoeSize </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'Speed')" > 🚄Speed </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'Temperature')" > ❌Temperature </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'Time')" > ⏰Time </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'Torque')" > 🔧Torque </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'Volume')" > 💧Volume </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'VolumetricFlow')" > ❌VolumetricFlow </button> 
+        <button class="subtablinks" onclick="openSubCategory(event, 'Weight')" > 🏋Weight </button> 
+      </div>
+    </div>
+    <div id="Finance" class="tabcontent">
+      <h3>Finance</h3>
+      <p>Finance Elements</p>
+    </div>
+    <div id="Health" class="tabcontent">
+      <h3>Health</h3>
+      <p>Health Elements</p>
+    </div>
+    <div id="Misc" class="tabcontent">
+      <div class="subtab">
+        <button class="subtablinks" onclick="openSubCategory(event, 'DownloadTimeCalculator')"> ⏬DownloadTimeCalculator </button>
+      </div>
+    </div>
+
+    <!-- ############## ############## ############## -->
+    <!-- SUB SUB CATEGORIES'S -->
+    <!-- ############## ############## ############## -->
+    
+    <!-- ############## -->
+    <!-- #1 ALGEBRA SUB SUB CATEGORIES -->
+    <!-- ############## -->
+
+    <div id="Percentage" class="subtabcontent">
+      <div class="subsubtab"> 
+        <button class="subsubtablinks" onclick="openSubSubCategory(event, 'Discount')" > Discount </button> 
+      </div>
+      <div class="subsubtab">
+        <button class="subsubtablinks" onclick="openSubSubCategory(event, 'Increase')" > Increase </button>
+      </div>
+      <div class="subsubtab">
+        <button class="subsubtablinks" onclick="openSubSubCategory(event, 'PercentageXY')" > PercentageXY </button>
+      </div>
+      <div class="subsubtab">
+        <button class="subsubtablinks" onclick="openSubSubCategory(event, 'PercentageICDC')" > PercentageICDC </button>
+      </div>
+    </div>
+
+    <!-- ############## -->
+    <!-- #2 GEOMETRY SUB CATEGORIES -->
+    <!-- ############## -->
+    
+    <!-- ############## -->
+    <!-- #3 UNITCONV SUB CATEGORIES n.a. -->
+    <!-- ############## -->
+  
+    <!-- ############## ############## ############## -->
+    <!-- SUB SUB MENU'S -->
+    <!-- ############## ############## ############## -->
+
+ <div id="Discount" class="subsubtabcontent"> <div class="menuBox"> <h3>Discount</h3> <table> <tr> <td>Initial value</td><td> <input type="text" id="alg_perc_disc_init" oninput="setDiscountResult()"/> </td></tr><tr> <td>Discount</td><td><input type="text" id="alg_perc_disc_disc" oninput="setDiscountResult()"/> </td><td>%</td></tr></table> </div><div class="menuBox"> <h3>Result</h3> <table> <tr> <td>Final value</td><td><input type="text" id="alg_perc_disc_final"/></td></tr><tr> <td>Discount</td><td><input type="text" id="alg_perc_disc_finaldisc"/></td></tr></table> </div></div><div id="Increase" class="subsubtabcontent"> <div class="menuBox"> <h3>Increase</h3> <table> <tr> <td>Initial value</td><td> <input type="text" id="alg_perc_incr_init" oninput="setIncreaseResult()"/> </td></tr><tr> <td>Increase</td><td> <input type="text" id="alg_perc_incr_disc" oninput="setIncreaseResult()"/> </td><td>%</td></tr></table> </div><div class="menuBox"> <h3>Result</h3> <table> <tr> <td>Final value</td><td><input type="text" id="alg_perc_incr_final"/></td></tr><tr> <td>Increase</td><td><input type="text" id="alg_perc_incr_finaldisc"/></td></tr></table> </div></div><div id="PercentageXY" class="subsubtabcontent"> <div class="menuBox"> <h3>Percentage of X from Y</h3> <table> <tr> <td>X</td><td> <input type="text" id="alg_perc_xy_x" oninput="setPercentageXY()"/> </td></tr><tr> <td>Y</td><td> <input type="text" id="alg_perc_xy_y" oninput="setPercentageXY()"/> </td></tr></table> </div><div class="menuBox"> <h3>Result</h3> <table> <tr> <td>Percentage</td><td><input type="text" id="alg_perc_xy_final"/></td><td>%</td></tr></table> </div></div><div id="PercentageICDC" class="subsubtabcontent"> <div class="menuBox"> <h3>Percentage Increase / Decrease</h3> <table> <tr> <td>From</td><td> <input type="text" id="alg_perc_icdc_x" oninput="setPercentageICDC()"/> </td></tr><tr> <td>To</td><td> <input type="text" id="alg_perc_icdc_y" oninput="setPercentageICDC()"/> </td></tr></table> </div><div class="menuBox"> <h3>Result</h3> <table> <tr> <td>Percentage</td><td><input type="text" id="alg_perc_icdc_final"/></td><td>%</td></tr></table> </div></div>
+  
+<!-- Acceleration --> <div id="Acceleration" class="subtabcontent"><div class="menuBox"> <table> <tr> <td>MeterSecond2</td><td><input type="text" id="unit_acce_ms2" placeholder="ms2" oninput="accelerationToStandard(this.value, 1, 'MeterSecond2')"></td></tr><tr> <td>FootSecond2</td><td><input type="text" id="unit_acce_fts2" placeholder="fts2" oninput="accelerationToStandard(this.value, 0.3, 'FootSecond2')"></td></tr><tr> <td>Gravity</td><td><input type="text" id="unit_acce_g0" placeholder="g0" oninput="accelerationToStandard(this.value, 9.81, 'Gravity')"></td></tr><tr> <td>Gal</td><td><input type="text" id="unit_acce_cms2" placeholder="cms2" oninput="accelerationToStandard(this.value, 0.01, 'Gal')"></td></tr></table> </div></div>
+  
+<!-- Angle -->
+
+<!-- Area --> <div id="Area" class="subtabcontent"> <div class="menuBox"> <h3>Metric</h3> <table> <tr> <td>Millimeter ²</td><td><input type="text" id="unit_area_mm2" oninput="areaToStandard(this.value, 1, 'mm2')" placeholder="mm²"></td></tr><tr> <td>Centimeter ²</td><td><input type="text" id="unit_area_cm2" oninput="areaToStandard(this.value, 100, 'cm2')" placeholder="cm²"></td></tr><tr> <td>Meter ²</td><td><input type="text" id="unit_area_m2" oninput="areaToStandard(this.value, 1000000, 'm2')" placeholder="m²"></td></tr><tr> <td>Kilometer ²</td><td><input type="text" id="unit_area_km2" oninput="areaToStandard(this.value, 1000000000000, 'km2')" placeholder="km²"></td></tr><tr> <td>Hectare</td><td><input type="text" id="unit_area_ha" oninput="areaToStandard(this.value, 10000000000, 'ha')" placeholder="ha"></td></tr></table> <h3>Imperial</h3> <table> <tr> <td>Inch ²</td><td><input type="text" id="unit_area_in2" oninput="areaToStandard(this.value, 645.16, 'in2')" placeholder="in²"></td></tr><tr> <td>Foot ²</td><td><input type="text" id="unit_area_ft2" oninput="areaToStandard(this.value, 92903.04, 'ft2')" placeholder="ft²"></td></tr><tr> <td>Yard ²</td><td><input type="text" id="unit_area_yd2" oninput="areaToStandard(this.value, 836127.36, 'yd2')" placeholder="yd²"></td></tr><tr> <td>Mile ²</td><td><input type="text" id="unit_area_ml2" oninput="areaToStandard(this.value, 2590000000000, 'ml2')" placeholder="mi²"></td></tr><tr> <td>Acre</td><td><input type="text" id="unit_area_ac" oninput="areaToStandard(this.value, 4046856422.4, 'ac')" placeholder="acre"></td></tr></table> </div></div>
+
+<!-- Data Transfer Speed --> <div id="DataTransferSpeed" class="subtabcontent"> <div class="menuBox"> <h3>Bit</h3> <table> <tr> <td>Bit / Second</td><td><input type="text" id="unit_dts_bps" placeholder="bps" oninput="datatransferspeedToStandard(this.value, 1, 'BitSec')"></td></tr><tr> <td>KiloBit / Second</td><td><input type="text" id="unit_dts_kbps" placeholder="kbps" oninput="datatransferspeedToStandard(this.value, 1000, 'KBitSec')"></td></tr><tr> <td>MegaBit / Second</td><td><input type="text" id="unit_dts_mbps" placeholder="mbps" oninput="datatransferspeedToStandard(this.value, 1000000, 'MBitSec')"></td></tr><tr> <td>GigaBit / Second</td><td><input type="text" id="unit_dts_gbps" placeholder="gbps" oninput="datatransferspeedToStandard(this.value, 1000000000, 'GBitSec')"></td></tr><tr> <td>TeraBit / Second</td><td><input type="text" id="unit_dts_tbps" placeholder="tbps" oninput="datatransferspeedToStandard(this.value, 1000000000000, 'TBitSec')"></td></tr></table> <h3>Byte</h3> <table> <tr> <td>Byte / Second</td><td><input type="text" id="unit_dts_b/s" placeholder="b/s" oninput="datatransferspeedToStandard(this.value, 8, 'ByteSec')"></td></tr><tr> <td>KiloByte / Second</td><td><input type="text" id="unit_dts_kb/s" placeholder="kb/s" oninput="datatransferspeedToStandard(this.value, 8000, 'KByteSec')"></td></tr><tr> <td>MegaByte / Second</td><td><input type="text" id="unit_dts_mb/s" placeholder="mb/s" oninput="datatransferspeedToStandard(this.value, 8000000, 'MByteSec')"></td></tr><tr> <td>GigaByte / Second</td><td><input type="text" id="unit_dts_gb/s" placeholder="gb/s" oninput="datatransferspeedToStandard(this.value, 8000000000, 'GByteSec')"></td></tr><tr> <td>TeraByte / Second</td><td><input type="text" id="unit_dts_tb/s" placeholder="tb/s" oninput="datatransferspeedToStandard(this.value, 8000000000000, 'TByteSec')"></td></tr></table> </div></div>
+  
+<!-- Data Storage --> <div id="DigitalStorage" class="subtabcontent"> <div class="menuBox"> <h3>Bit</h3> <table> <tr> <td>Bit</td><td> <input type="text" id="unit_dstorage_Bit" placeholder="Bit" oninput="digitalstorageToStandard(this.value, 1, 'Bit')"> </td></tr><tr> <td><h6>Multiplies of 1000</h6></td></tr><tr> <td>Kilobit</td><td> <input type="text" id="unit_dstorage_kBit" placeholder="kBit" oninput="digitalstorageToStandard(this.value, 1000, 'kiloBit')"> </td></tr><tr> <td>Megabit</td><td> <input type="text" id="unit_dstorage_mBit" placeholder="mBit" oninput="digitalstorageToStandard(this.value, 1000000, 'megaBit')"> </td></tr><tr> <td>GigaBit</td><td> <input type="text" id="unit_dstorage_gBit" placeholder="gBit" oninput="digitalstorageToStandard(this.value, 1000000000, 'gigaBit')"> </td></tr><tr> <td>Terabit</td><td> <input type="text" id="unit_dstorage_tBit" placeholder="tBit" oninput="digitalstorageToStandard(this.value, 1000000000000, 'teraBit')"> </td></tr><tr> <td>Petabit</td><td> <input type="text" id="unit_dstorage_pBit" placeholder="pBit" oninput="digitalstorageToStandard(this.value, 1000000000000000, 'petaBit')"> </td></tr><tr> <td>Exabit</td><td> <input type="text" id="unit_dstorage_eBit" placeholder="eBit" oninput="digitalstorageToStandard(this.value, 1000000000000000000, 'exaBit')"> </td></tr><tr> <td><h6>Multiplies of 1024</h6></td></tr><tr> <td>Kibibit</td><td> <input type="text" id="unit_dstorage_kiBit" placeholder="kiBit" oninput="digitalstorageToStandard(this.value, 1024, 'kibiBit')"> </td></tr><tr> <td>Mebibit</td><td> <input type="text" id="unit_dstorage_meBit" placeholder="meBit" oninput="digitalstorageToStandard(this.value, 1048576, 'mebiBit')"> </td></tr><tr> <td>Gibibit</td><td> <input type="text" id="unit_dstorage_giBit" placeholder="giBit" oninput="digitalstorageToStandard(this.value, 1073741824, 'gibiBit')"> </td></tr><tr> <td>Tebibit</td><td> <input type="text" id="unit_dstorage_teBit" placeholder="teBit" oninput="digitalstorageToStandard(this.value, 109951162776, 'tebiBit')"> </td></tr><tr> <td>Pebibit</td><td> <input type="text" id="unit_dstorage_peBit" placeholder="peBit" oninput="digitalstorageToStandard(this.value, 1125899906842624, 'pebiBit')"> </td></tr><tr> <td>Exbibit</td><td> <input type="text" id="unit_dstorage_exBit" placeholder="exBit" oninput="digitalstorageToStandard(this.value, 1152921504606846976, 'exbiBit')"> </td></tr></table> <h3>Byte</h3> <table> <tr> <td>Byte</td><td> <input type="text" id="unit_dstorage_byte" placeholder="byte" oninput="digitalstorageToStandard(this.value, 8, 'Byte')"> </td></tr><tr> <td><h6>Multiplies of 1000</h6></td></tr><tr> <td>Kilobyte</td><td> <input type="text" id="unit_dstorage_kbyte" placeholder="kbyte" oninput="digitalstorageToStandard(this.value, 8000, 'kiloByte')"> </td></tr><tr> <td>Megabyte</td><td> <input type="text" id="unit_dstorage_mbyte" placeholder="mbyte" oninput="digitalstorageToStandard(this.value, 8000000, 'megaByte')"> </td></tr><tr> <td>Gigabyte</td><td> <input type="text" id="unit_dstorage_gbyte" placeholder="gbyte" oninput="digitalstorageToStandard(this.value, 8000000000, 'gigaByte')"> </td></tr><tr> <td>Terabyte</td><td> <input type="text" id="unit_dstorage_tbyte" placeholder="tbyte" oninput="digitalstorageToStandard(this.value, 8000000000000, 'teraByte')"> </td></tr><tr> <td>Petabyte</td><td> <input type="text" id="unit_dstorage_pbyte" placeholder="pbyte" oninput="digitalstorageToStandard(this.value, 8000000000000000, 'petaByte')"> </td></tr><tr> <td>Exabyte</td><td> <input type="text" id="unit_dstorage_ebyte" placeholder="ebyte" oninput="digitalstorageToStandard(this.value, 8000000000000000000, 'exaByte')"> </td></tr><tr> <td><h6>Multiplies of 1024</h6></td></tr><tr> <td>Kibibyte</td><td> <input type="text" id="unit_dstorage_kibyte" placeholder="kibyte" oninput="digitalstorageToStandard(this.value, 8192, 'kibiByte')"> </td></tr><tr> <td>Mebibyte</td><td> <input type="text" id="unit_dstorage_mebyte" placeholder="mebyte" oninput="digitalstorageToStandard(this.value, 8388608, 'mebiByte')"> </td></tr><tr> <td>Gigibyte</td><td> <input type="text" id="unit_dstorage_gibyte" placeholder="gibyte" oninput="digitalstorageToStandard(this.value, 8589934592, 'gibiByte')"> </td></tr><tr> <td>Tebibyte</td><td> <input type="text" id="unit_dstorage_tebyte" placeholder="tebyte" oninput="digitalstorageToStandard(this.value, 8796093022210, 'tebiByte')"> </td></tr><tr> <td>Pebibyte</td><td> <input type="text" id="unit_dstorage_pebyte" placeholder="pebyte" oninput="digitalstorageToStandard(this.value, 9007199254740000, 'pebiByte')"> </td></tr><tr> <td>Exbibyte</td><td> <input type="text" id="unit_dstorage_exbyte" placeholder="exbyte" oninput="digitalstorageToStandard(this.value, 9223372036853760000, 'exbiByte')"> </td></tr></table> </div></div>
+  
+<!-- Energy --> <div id="Energy" class="subtabcontent"> <div class="menuBox"> <table> <tr> <td>Joule</td><td><input type="text" id="unit_energy_J" placeholder="J" oninput="energyToStandard(this.value, 1, 'Joule')"></td></tr><tr> <td>KiloJoule</td><td><input type="text" id="unit_energy_kJ" placeholder="kJ" oninput="energyToStandard(this.value, 1000, 'KiloJoule')"></td></tr><tr> <td>MegaJoule</td><td><input type="text" id="unit_energy_MJ" placeholder="MJ" oninput="energyToStandard(this.value, 1000000, 'MegaJoule')"></td></tr><tr> <td>Erg</td><td><input type="text" id="unit_energy_erg" placeholder="erg" oninput="energyToStandard(this.value, 0.0000001, 'Erg')"></td></tr><tr> <td>Electronvolt</td><td><input type="text" id="unit_energy_eV" placeholder="eV" oninput="energyToStandard(this.value, 0.00000000000000000016, 'Electronvolt')"></td></tr><tr> <td>Calorie</td><td><input type="text" id="unit_energy_cal" placeholder="cal" oninput="energyToStandard(this.value, 4.184, 'Calorie')"></td></tr><tr> <td>Kilocalorie</td><td><input type="text" id="unit_energy_kcal" placeholder="kcal" oninput="energyToStandard(this.value, 4184, 'Kilocalorie')"></td></tr><tr> <td>FootPound</td><td><input type="text" id="unit_energy_ftlbf" placeholder="ftlbf" oninput="energyToStandard(this.value, 1.36, 'FootPound')"></td></tr><tr> <td>WattHour</td><td><input type="text" id="unit_energy_Wh" placeholder="Wh" oninput="energyToStandard(this.value, 3600, 'WattHour')"></td></tr><tr> <td>KilowattHour</td><td><input type="text" id="unit_energy_kWh" placeholder="kWh" oninput="energyToStandard(this.value, 3600000, 'KilowattHour')"></td></tr><tr> <td>BritishThermalUnit</td><td><input type="text" id="unit_energy_BTU" placeholder="BTU" oninput="energyToStandard(this.value, 1055.06, 'BritishThermalUnit')"></td></tr></table> </div></div>
+  
+<!-- Force --> <div id="Force" class="subtabcontent"> <div class="menuBox"> <table> <tr> <td>Newton</td><td><input type="text" id="unit_force_N" placeholder="N" oninput="forceToStandard(this.value, 1, 'Newton')"></td></tr><tr> <td>KilogramForce</td><td><input type="text" id="unit_force_kgf" placeholder="kgf" oninput="forceToStandard(this.value, 9.81, 'KilogramForce')"></td></tr><tr> <td>GramForce</td><td><input type="text" id="unit_force_gf" placeholder="gf" oninput="forceToStandard(this.value, 0.00981, 'GramForce')"></td></tr><tr> <td>Dyne</td><td><input type="text" id="unit_force_dyn" placeholder="dyn" oninput="forceToStandard(this.value, 0.00001, 'Dyne')"></td></tr><tr> <td>PoundForce</td><td><input type="text" id="unit_force_lbf" placeholder="lbf" oninput="forceToStandard(this.value, 4.45, 'PoundForce')"></td></tr><tr> <td>OunceForce</td><td><input type="text" id="unit_force_ozf" placeholder="ozf" oninput="forceToStandard(this.value, 0.28, 'OunceForce')"></td></tr></table> </div></div>
+  
+<!-- Length --> <div id="Length" class="subtabcontent"> <div class="menuBox"> <h3>Metric</h3> <table> <tr><td>Nanometer</td><td><input type="text" id="unit_length_nm" placeholder="nm" oninput="lengthToStandard(this.value, 1, 'nm')"></td></tr><tr><td>Micrometer</td><td><input type="text" id="unit_length_qm" placeholder="µm" oninput="lengthToStandard(this.value, 1000, 'qm')"></td></tr><tr><td>Millimeter</td><td><input type="text" id="unit_length_mm" placeholder="mm" oninput="lengthToStandard(this.value, 1000000, 'mm')"></td></tr><tr><td>Centimeter</td><td><input type="text" id="unit_length_cm" placeholder="cm" oninput="lengthToStandard(this.value, 10000000, 'cm')"></td></tr><tr><td>Decimeter</td><td><input type="text" id="unit_length_dm" placeholder="dm" oninput="lengthToStandard(this.value, 100000000, 'dm')"></td></tr><tr><td>Meter</td><td><input type="text" id="unit_length_m" placeholder="m" oninput="lengthToStandard(this.value, 1000000000, 'm')"></td></tr><tr><td>Decameter</td><td><input type="text" id="unit_length_dam" placeholder="dam" oninput="lengthToStandard(this.value, 10000000000, 'dam')"></td></tr><tr><td>Kilometer</td><td><input type="text" id="unit_length_km" placeholder="km" oninput="lengthToStandard(this.value, 1000000000000, 'km')"></td></tr></table> <h3>Imperial</h3> <table> <tr><td>Inch</td><td><input type="text" id="unit_length_in" placeholder="in" oninput="lengthToStandard(this.value, 25400000, 'in')"></td></tr><tr><td>Foot</td><td><input type="text" id="unit_length_ft" placeholder="ft" oninput="lengthToStandard(this.value, 304800000, 'ft')"></td></tr><tr><td>Yard</td><td><input type="text" id="unit_length_yd" placeholder="yd" oninput="lengthToStandard(this.value, 914400000, 'yd')"></td></tr><tr><td>Mile</td><td><input type="text" id="unit_length_mi" placeholder="mi" oninput="lengthToStandard(this.value, 1610000000000, 'mi')"></td></tr><tr><td>Nautical Mile</td><td><input type="text" id="unit_length_nmi" placeholder="nmi" oninput="lengthToStandard(this.value, 1850000000000, 'nmi')"></td></tr></table> </div></div>
+ 
+<!-- Power --> <div id="Power" class="subtabcontent"> <div class="menuBox"> <table> <tr> <td>Milliwatt</td><td><input type="text" id="unit_power_mW" placeholder="mW" oninput="powerToStandard(this.value, 1, 'Milliwatt')"></td></tr><tr> <td>Watt</td><td><input type="text" id="unit_power_W" placeholder="W" oninput="powerToStandard(this.value, 1000, 'Watt')"></td></tr><tr> <td>Kilowatt</td><td><input type="text" id="unit_power_kW" placeholder="kW" oninput="powerToStandard(this.value, 1000000, 'Kilowatt')"></td></tr><tr> <td>Megawatt</td><td><input type="text" id="unit_power_MW" placeholder="MW" oninput="powerToStandard(this.value, 1000000000, 'Megawatt')"></td></tr><tr> <td>Horsepower</td><td><input type="text" id="unit_power_hp" placeholder="hp" oninput="powerToStandard(this.value, 745699.87, 'Horsepower')"></td></tr></table> </div></div>
+
+<!-- Pressure -->
+<div id="Pressure" class="subtabcontent">
+  <div class="menuBox">
+  <table>
+  <tr>
+  <td>Pascal</td>
+  <td><input type="text" id="unit_pressure_Pa" placeholder="Pa" oninput="pressureToStandard(this.value, 1, 'Pascal')"></td>
+  </tr>
+  <tr>
+  <td>Kilopascal</td>
+  <td><input type="text" id="unit_pressure_kPa" placeholder="kPa" oninput="pressureToStandard(this.value, 1000, 'Kilopascal')"></td>
+  </tr>
+  <tr>
+  <td>Megapascal</td>
+  <td><input type="text" id="unit_pressure_MPa" placeholder="MPa" oninput="pressureToStandard(this.value, 1000000, 'Megapascal')"></td>
+  </tr>
+  <tr>
+  <td>Bar</td>
+  <td><input type="text" id="unit_pressure_bar" placeholder="bar" oninput="pressureToStandard(this.value, 100000, 'Bar')"></td>
+  </tr>
+  <tr>
+  <td>Atmosphere</td>
+  <td><input type="text" id="unit_pressure_atm" placeholder="atm" oninput="pressureToStandard(this.value, 101325, 'Atmosphere')"></td>
+  </tr>
+  <tr>
+  <td>WaterMillimeter</td>
+  <td><input type="text" id="unit_pressure_mmH2O" placeholder="mmH2O" oninput="pressureToStandard(this.value, 9.81, 'WaterMillimeter')"></td>
+  </tr>
+  </table>
+  </div>
+</div>
+
+<!-- Speed --> <div id="Speed" class="subtabcontent"> <div class="menuBox"> <h3>Metric</h3> <table> <tr> <td>Kilometer / Hour</td><td><input type="text" id="unit_speed_kmh" placeholder="km/h" oninput="speedToStandard(this.value, 1, 'KilometerHour')"></td></tr><tr> <td>Meter / Second</td><td><input type="text" id="unit_speed_ms" placeholder="m/s" oninput="speedToStandard(this.value, 3.6, 'MeterSecond')"></td></tr></table><h3>Imperial</h3><table> <tr> <td>Mile / Hour</td><td><input type="text" id="unit_speed_mph" placeholder="mph" oninput="speedToStandard(this.value, 1.61, 'MileHour')"></td></tr><tr> <td>Foot / Second</td><td><input type="text" id="unit_speed_fts" placeholder="ft/s" oninput="speedToStandard(this.value, 1.1, 'FootSecond')"></td></tr><tr> <td>Foot / Minute</td><td><input type="text" id="unit_speed_ftmin" placeholder="ft/min" oninput="speedToStandard(this.value, 0.02, 'FootMinute')"></td></tr></table><h3>Other</h3><table> <tr> <td>LightSpeed</td><td><input type="text" id="unit_speed_c" placeholder="c" oninput="speedToStandard(this.value, 1079252848.8, 'LightSpeed')"></td></tr><tr> <td>Mach</td><td><input type="text" id="unit_speed_mach" placeholder="mach" oninput="speedToStandard(this.value, 1193.76, 'Mach')"></td></tr><tr> <td>Knot</td><td><input type="text" id="unit_speed_knot" placeholder="knot" oninput="speedToStandard(this.value, 644.58, 'Knot')"></td></tr></table> </div></div>
+
+<!-- Time --> <div id="Time" class="subtabcontent"> <div class="menuBox"> <table> <tr> <td>Millisecond</td><td><input type="text" id="unit_time_ms" placeholder="ms" oninput="timeToStandard(this.value, 1, 'Millisecond')"></td></tr><tr> <td>Second</td><td><input type="text" id="unit_time_s" placeholder="s" oninput="timeToStandard(this.value, 1000, 'Second')"></td></tr><tr> <td>Minute</td><td><input type="text" id="unit_time_min" placeholder="min" oninput="timeToStandard(this.value, 60000, 'Minute')"></td></tr><tr> <td>Hour</td><td><input type="text" id="unit_time_h" placeholder="h" oninput="timeToStandard(this.value, 3600000, 'Hour')"></td></tr><tr> <td>Day</td><td><input type="text" id="unit_time_d" placeholder="d" oninput="timeToStandard(this.value, 86400000, 'Day')"></td></tr><tr> <td>Week</td><td><input type="text" id="unit_time_we" placeholder="we" oninput="timeToStandard(this.value, 604800000, 'Week')"></td></tr><tr> <td>Month</td><td><input type="text" id="unit_time_m" placeholder="m" oninput="timeToStandard(this.value, 2630016000, 'Month')"></td></tr><tr> <td>Year</td><td><input type="text" id="unit_time_y" placeholder="y" oninput="timeToStandard(this.value, 31556952000, 'Year')"></td></tr><tr> <td>Decade</td><td><input type="text" id="unit_time_de" placeholder="de" oninput="timeToStandard(this.value, 315569520000, 'Decade')"></td></tr><tr> <td>Century</td><td><input type="text" id="unit_time_ce" placeholder="ce" oninput="timeToStandard(this.value, 3155695200000, 'Century')"></td></tr><tr> <td>Millenium</td><td><input type="text" id="unit_time_me" placeholder="me" oninput="timeToStandard(this.value, 31556952000000, 'Millenium')"></td></tr></table> </div></div>
+  
+<!-- Torque --> <div id="Torque" class="subtabcontent"> <div class="menuBox"> <table> <tr> <td>NewtonMeter</td><td><input type="text" id="unit_torque_Nm" placeholder="Nm" oninput="torqueToStandard(this.value, 1, 'NewtonMeter')"></td></tr><tr> <td>NewtonCentimeter</td><td><input type="text" id="unit_torque_Ncm" placeholder="Ncm" oninput="torqueToStandard(this.value, 0.01, 'NewtonCentimeter')"></td></tr><tr> <td>MeterKilogram</td><td><input type="text" id="unit_torque_mkg" placeholder="mkg" oninput="torqueToStandard(this.value, 9.81, 'MeterKilogram')"></td></tr><tr> <td>FootPoundForce</td><td><input type="text" id="unit_torque_ftlbf" placeholder="ftlbf" oninput="torqueToStandard(this.value, 1.36, 'FootPoundForce')"></td></tr><tr> <td>FootPoundal</td><td><input type="text" id="unit_torque_ftpdl" placeholder="ftpdl" oninput="torqueToStandard(this.value, 0.04, 'FootPoundal')"></td></tr><tr> <td>InchPoundForce</td><td><input type="text" id="unit_torque_inlbf" placeholder="inlbf" oninput="torqueToStandard(this.value, 0.11, 'InchPoundForce')"></td></tr></table> </div></div>
+  
+<!-- Volume -->
+
+<div id="Volume" class="subtabcontent">
+  <div class="menuBox">
+  <table>
+  <tr>
+  <td>CubicCentimeter</td>
+  <td><input type="text" id="unit_volume_cm3" placeholder="cm3" oninput="volumeToStandard(this.value, 1, 'CubicCentimeter')"></td>
+  </tr>
+  <tr>
+  <td>CubicDecimter</td>
+  <td><input type="text" id="unit_volume_dm3" placeholder="dm3" oninput="volumeToStandard(this.value, 1000, 'CubicDecimter')"></td>
+  </tr>
+  <tr>
+  <td>CubicMter</td>
+  <td><input type="text" id="unit_volume_m3" placeholder="m3" oninput="volumeToStandard(this.value, 1000000, 'CubicMter')"></td>
+  </tr>
+  <tr>
+  <td>Milliliter</td>
+  <td><input type="text" id="unit_volume_ml" placeholder="ml" oninput="volumeToStandard(this.value, 1, 'Milliliter')"></td>
+  </tr>
+  <tr>
+  <td>Liter</td>
+  <td><input type="text" id="unit_volume_l" placeholder="l" oninput="volumeToStandard(this.value, 1000, 'Liter')"></td>
+  </tr>
+  <tr>
+  <td>CubicInch</td>
+  <td><input type="text" id="unit_volume_in3" placeholder="in3" oninput="volumeToStandard(this.value, 16.39, 'CubicInch')"></td>
+  </tr>
+  <tr>
+  <td>CubicFoot</td>
+  <td><input type="text" id="unit_volume_ft3" placeholder="ft3" oninput="volumeToStandard(this.value, 28,316.85, 'CubicFoot')"></td>
+  </tr>
+  <tr>
+  <td>CubicYard</td>
+  <td><input type="text" id="unit_volume_yd3" placeholder="yd3" oninput="volumeToStandard(this.value, 764,554.86, 'CubicYard')"></td>
+  </tr>
+  <tr>
+  <td>Teaspoon</td>
+  <td><input type="text" id="unit_volume_tsp" placeholder="tsp" oninput="volumeToStandard(this.value, 5.92, 'Teaspoon')"></td>
+  </tr>
+  <tr>
+  <td>Tablespoon</td>
+  <td><input type="text" id="unit_volume_tbsp" placeholder="tbsp" oninput="volumeToStandard(this.value, 17.76, 'Tablespoon')"></td>
+  </tr>
+  </table>
+  </div>
+  </div>
+  
+
+<!-- Weight --> <div id="Weight" class="subtabcontent"> <div class="menuBox"> <h3>Metric</h3> <table> <tr> <td>Milligram</td><td><input type="text" id="unit_weight_mg" placeholder="mg" oninput="weightToStandard(this.value, 1, 'Milligram')"></td></tr><tr> <td>Centigram</td><td><input type="text" id="unit_weight_cg" placeholder="cg" oninput="weightToStandard(this.value, 10, 'Centigram')"></td></tr><tr> <td>Gram</td><td><input type="text" id="unit_weight_g" placeholder="g" oninput="weightToStandard(this.value, 1000, 'Gram')"></td></tr><tr> <td>Kilogram</td><td><input type="text" id="unit_weight_kg" placeholder="kg" oninput="weightToStandard(this.value, 1000000, 'Kilogram')"></td></tr><tr> <td>Metric Ton</td><td><input type="text" id="unit_weight_t" placeholder="t" oninput="weightToStandard(this.value, 1000000000, 'MetricTon')"></td></tr></table> <h3>Imperial</h3> <table> <tr> <td>Ounce</td><td><input type="text" id="unit_weight_oz" placeholder="oz" oninput="weightToStandard(this.value, 28349.52, 'Ounce')"></td></tr><tr> <td>Pound</td><td><input type="text" id="unit_weight_lbs" placeholder="lbs" oninput="weightToStandard(this.value, 453592.37, 'Pound')"></td></tr><tr> <td>Stone</td><td><input type="text" id="unit_weight_sto" placeholder="" oninput="weightToStandard(this.value, 6350293.18, 'Stone')"></td></tr><tr> <td>Short Ton</td><td><input type="text" id="unit_weight_shoT" placeholder="" oninput="weightToStandard(this.value, 907184740, 'ShortTon')"></td></tr><tr> <td>Long Ton</td><td><input type="text" id="unit_weight_loT" placeholder="" oninput="weightToStandard(this.value, 1016046908.8, 'LongTon')"></td></tr></table> </div></div>
+  
+
+<!-- Download Time Calculator --> <div id="DownloadTimeCalculator" class="subtabcontent"> <div class="menuBox"> <h3>How fast is your internet speed?</h3> <table> <tr><td>Download Speed</td><td><input type="text" id="misc_downtime_speed" placeholder="speed" oninput="formatTime(getDownTimeInSecond(speedToStandard(),sizeToStandard()))"></td><td><select id="select_down_speed"><option value="Kbps">Kbps</option><option value="Mbps" selected="selected">Mbps</option><option value="Gbps">Gbps</option></select></td></tr></table> <h3>What is the size of the thing you want to download?</h3> <table> <tr><td>Download Size</td><td><input type="text" id="misc_downtime_size" placeholder="size" oninput="formatTime(getDownTimeInSecond(speedToStandard(),sizeToStandard()))"></td><td><select id="select_down_size"><option value="MB">MB</option><option value="GB" selected="selected">GB</option><option value="TB">TB</option></select></td></tr></table> <h3>It would theoretically take...</h3> <table> <tr><td>Time</td><td><input type="text" id="misc_downtime_time" placeholder="time"></td></tr></table> </div></div>
+
+</body>
+</html>
